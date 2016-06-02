@@ -1,0 +1,343 @@
+@charset "utf-8";
+/*main通用样式*/
+html{
+    font-size: 14px;
+}
+body {
+    color: #7d7d7d;
+    /*background: #f5f4f2;*/
+    font-size: .875rem;
+    line-height: 24px;
+    background: #eeede8;
+}
+h1, h2, h3, h4, h5, h6, ul, li, ol, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    /*transition: 0.25s ease-out;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #666;
+    /*font-weight: bold;*/
+}
+h4 {
+    margin: 0 0 10px 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea {
+    height: 40px;
+    /*line-height: 40px;*/
+    padding: 6px 10px;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #777;
+}
+input:focus,
+input:active,
+input:hover,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+textarea:active,
+textarea:hover {
+    background: #fff;
+    border: 1px solid #54abd4;
+    box-shadow: none;
+    transition: all .25s ease-in-out;
+}
+/*index的csss*/
+/*header*/
+.navbar{
+    padding: 12px 0;
+    background-color: #88c5e1;
+    border: none;
+    border-bottom: 5px solid #54abd4;
+}
+.navbar-brand-mc{
+    padding: 6px 0;
+    font-weight: 100;
+}
+.navbar-brand-mc img{
+    height: 40px;
+    display: inline-block;
+    margin-right: 3px;
+}
+.navbar #navbar a{
+    font-size: 1rem;
+    color:#fff;
+    border-bottom:2px solid transparent;
+
+}
+.navbar #navbar a:hover{
+    margin-bottom:-12px;
+    border-bottom:2px solid #fff;
+
+}
+
+.navbar-form-mc .input-group {
+    width: 100%;
+}
+/*伪类选择符：！！！父类里面的最后一个.input-group-btn*/
+.input-group-nav .input-group-btn:last-child > .btn,
+.input-group-nav .input-group-btn:last-child > .btn-group {
+    /*z-index: 2;*/
+    margin-left: -42px;
+}
+.input-group-nav .input-group-btn .btn {
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    color: #54abd4;
+}
+/*content*/
+/*注册登录的wrapper*/
+.home .content{
+    margin: 60px 0 0 0;
+}
+.wrapper{
+    padding: 77px 0;
+    margin: 80px auto;
+    background: url(../img/homeImg.png);
+    /*background-size: cover;*/
+
+}
+/*居中显示！！！*/
+.wrapper .wrapper-intro{
+    text-align: center;
+}
+.wrapper .form-control{
+    margin: 15px 0 15px 0px;
+}
+.wrapper .log-or-sign a{
+    color: #fff;
+    border: none;
+    border-bottom:2px solid transparent;
+}
+.wrapper .checkbox{
+    color: #333;
+}
+.wrapper .log-or-sign .nav-tabs{
+    border:none;
+}
+.wrapper .log-or-sign .nav-tabs>li>a:hover{
+    background-color: transparent;
+    border: none;
+    color:#fff;
+    border-bottom:2px solid #fff;
+}
+.wrapper .log-or-sign .active{
+    background-color: transparent;
+    border: none;
+    color:#fff;
+    /*border-bottom:2px solid #;*/
+
+}
+.wrapper .log-or-sign .active>a{
+    background-color: transparent;
+    border: none;
+    color:#fff;
+    border-bottom:2px solid #fff;
+
+}
+/*home-page里的左边的section-carousel新科速递轮播*/
+.home-page .section-carousel{
+    background-color: #fff;
+    padding: 35px 25px 60px 25px;
+}
+.home-page  h4{
+    margin:0px 0 20px 0px;
+    padding:8px 16px;
+    border-left: 2px solid #88C5E1;
+}
+.home-page .section-carousel .carousel-indicators li{
+    
+    border:1px solid orange;
+
+}
+.home-page .section-carousel .carousel-indicators .active{
+    background-color: orange;
+    
+}
+.home-page .section-carousel .caption{
+    text-align: center;
+    font-size: 1rem;
+    margin:20px 0;
+    color:#999;
+
+}
+.home-page .section-carousel .thumbnail{
+    background-color: #f5f5f5;
+    position: relative;
+}
+.home-page .section-carousel .new-course-mask{
+    position: absolute;
+    width: 94%;
+    top: 12%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    
+}
+.home-page .section-carousel .new-course-mask h3 a{
+    color: #fff;
+    font-weight: 900;
+    
+     
+}
+.home-page .section-carousel .new-course-mask h3 {
+    margin-left: 3%;
+     text-shadow: 0px 1px 1px #999;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     
+}
+ .box-t{
+    height: 80px;
+    width: 64px;
+    background: no-repeat 50% center;
+    background-size: 125% auto;
+    margin-left: auto;
+    margin-right: auto;
+     transform: rotate(-60deg);
+}
+ .box-s{
+    transform: rotate(-60deg);
+    overflow: hidden;
+    
+}
+ .box-f{
+    transform: rotate(120deg);
+    overflow: hidden;
+   /*visibility:hidden;*/
+   
+}
+.home-page .section-carousel .carousel{
+    position: relative;
+}
+.home-page .section-carousel .carousel .carousel-indicators{
+    position: absolute;
+    bottom:-30px;
+
+
+}
+/*hot-course*/
+.home-page .hot-course{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 35px 25px 60px 25px;
+}
+.home-page .hot-course .item-card{
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+   margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom:40px;
+}
+.f-18 {
+    font-size: 1.125rem;
+    display: block;
+    
+ 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.f-weight{
+    font-weight: 600;
+}
+
+.f-hot{
+    color:#333;
+}
+.item-card .score img{
+    width: 12px;
+}
+.home-page .hot-course .item-card .card-icon{
+    width: 55px;
+    height: 44px;
+    
+    margin-left: 35%;
+    padding-top: 50px;
+}
+@media (max-width: 970px) {
+    .home-page .hot-course .item-card .card-icon{
+ 
+    margin-left: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .home-page .hot-course .item-card .card-icon{
+ 
+    margin-left: 45%;
+    }
+}
+.home-page .hot-course .item-card>a{
+    padding-top:90px;
+}
+
+
+/*热门标签*/
+.home-sub .hot-tag{
+    background-color: #fff;
+    padding: 35px 25px 60px 25px;
+}
+.home-sub .tag-section{
+    margin:30px 0;
+}
+.home-sub .tag-section .tag-info{
+    background-color: #88C5E1;
+    color:#fff;
+    display: inline-block;
+    margin: 0 4px 4px 0;
+    padding: 0 8px;
+    border-radius: 4px;
+
+
+ }
+ .home-sub .tag-section .tag-info:hover{
+     background-color: #337ab7;
+      text-decoration: none;
+ }
+ .home-sub .hot-tag h5{
+   
+    margin-bottom: 10px;
+ }
+ /*footer*/
+ footer{
+    margin-top: 45px;
+ }
+ footer .footer-icon {
+    width: 10%;
+}
+ footer .footer-seg{
+    width: 90%;
+    padding-left: 5px;
+ }
+ footer .footer-info{
+    text-align: center;
+    margin-top: 10px;
+ }
